@@ -128,10 +128,14 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                 }
                 ?>
                 </tr>
-
             </tbody>
         </table>
+    </div>
 
+    <div class="container-lg">
+    <button type="button" class="btn btn-primary">Ingresar Alumno</button>
+    <button type="button" class="btn btn-primary">Eliminar Alumno</button>
+    <button type="button" class="btn btn-primary">Actualizar Alumno</button>
     </div>
 
 
