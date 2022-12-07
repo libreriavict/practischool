@@ -16,6 +16,41 @@
 
 <body>
 
+<div class="container">
+        <div class="navigation">
+            <div class="menu-toggle"></div>
+            <ul class="list">
+                <li class="list-item active" style="color:#f44336"><a href="#">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Inicio</span>
+                </a></li>
+
+                <li class="list-item active" style="color:#ffa117"><a href="#">
+                    <span class="icon">
+                        <ion-icon name="alert-outline"></ion-icon>
+                    </span>
+                    <span class="text">Noticias</span>
+                </a></li>
+
+                <li class="list-item active" style="color:#0fc70f"><a href="#">
+                    <span class="icon">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </span>
+                    <span class="text">Contactos</span>
+                </a></li>
+
+                <li class="list-item active" style="color:#2196f3"><a href="#">
+                    <span class="icon">
+                        <ion-icon name="grid-outline"></ion-icon>
+                    </span>
+                    <span class="text">Matricula</span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
 
 <div class="container-table">
 
