@@ -132,10 +132,11 @@ $estudiante = "SELECT * FROM tbl_estudiante";
         </table>
     </div>
 
-    <div class="container-lg">
+    <div class="container-lg text-center">
+        
     <button type="button" class="btn btn-primary">Ingresar Alumno</button>
-    <button type="button" class="btn btn-primary">Eliminar Alumno</button>
-    <button type="button" class="btn btn-primary">Actualizar Alumno</button>
+    <button type="button" class="btn btn-secondary">Eliminar Alumno</button>
+    <button type="button" class="btn btn-success">Actualizar Alumno</button>
     </div>
 
 
