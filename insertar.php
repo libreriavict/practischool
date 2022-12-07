@@ -10,7 +10,7 @@ $estTelefono=$_POST['estTelefono'];
 $estCorreo=$_POST['estCorreo'];
 $estRepresentantePadres=$_POST['estRepresentantePadres'];
 $estDireccion=$_POST['estDireccion'];
-
+//codigo sql
 $sql="INSERT INTO db_practischool VALUES ('$estCedula','$estNombres','$estApellidos','$estFechaNacimiento','$estTelefono','$estCorreo','$estRepresentantePadres','$estDireccion')";
 $query=mysqli_query($sql);
 ?>
