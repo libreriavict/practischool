@@ -117,7 +117,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
 
         <div class="container">
 
-            <form class="row g-3 needs-validation">
+            <form action="insertar.php" method="POST" class="row g-3 needs-validation">
 
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="Nombres" placeholder="Nombres">
@@ -153,7 +153,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                     <label for="floatingInput">Direccion</label>
                 </div>
 
-                <button type="button" class="btn btn-primary">Matricular Alumno</button>
+                <button type="submit" class="btn btn-primary">Matricular Alumno</button>
 
 
             </form>
