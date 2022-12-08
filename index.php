@@ -105,8 +105,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
 
                     <td>
                     <button type="button" class="btn btn-secondary">Eliminar</button>
-<button type="button" class="btn btn-success">Editar</button>
-
+                    <button type="button" class="btn btn-success">Editar</button>
                     </td>
 
                 <?php
@@ -159,6 +158,12 @@ $estudiante = "SELECT * FROM tbl_estudiante";
 
     </form>
 
+    <footer>
+            <p>Copyright 2022</p>
+            <p><a href=”#”>INSTITUTO QUITO</a></p>
+            <p>PROYECTO AMBIENTES COMPUTACIONALES</p>
+            <p>Síguenos en <a href=”https://github.com/libreriavict/practischool”>GITHUB</a></p>
+         </footer>
 
    
 
