@@ -1,6 +1,6 @@
 <?php
 include("conexion.php");
-
+$con=conectar();
 $estudiante = "SELECT * FROM tbl_estudiante";
 ?>
 
@@ -109,63 +109,54 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                 <?php
             }
             ?>
-            </tr>
-
-            <tr>
-                ...
-            </tr>
-            
+            </tr>            
         </tbody>
-    </table>
+    </table>  
 
+    <div class="container">
 
-    <div class="container-table">
+      <form class="row g-3 needs-validation">
 
-        <div class="table__header">Cedula</div>
-        <div class="table__header">Nombres</div>
-        <div class="table__header">Apellidos</div>
-        <div class="table__header">Fecha de Nacimiento</div>
-        <div class="table__header">Telefono</div>
-        <div class="table__header">Correo</div>
-        <div class="table__header">Representante del Alumno</div>
-        <div class="table__header">Direccion</div>
+        <div class="form-floating mb-3">
+  <input type="text" class="form-control" id="Nombres" placeholder="Nombres">
+  <label for="floatingInput">Nombres</label>
+</div>
 
-        <?php
-        $resultado = mysqli_query($conexion, $estudiante);
+<div class="form-floating mb-3">
+<input type="text" class="form-control" id="Apellidos" placeholder="Apellidos">
+<label for="floatingInput">Apellidos</label>
+</div>
 
-        while ($row = mysqli_fetch_assoc($resultado)) {
-        ?>
+<div class="form-floating mb-3">
+<input type="date" class="form-control" id="Fecha" placeholder="Fecha">
+<label for="floatingInput">Fecha de Nacimiento</label>
+</div>
 
-        <div class="table__item">
-            <?php echo $row["estCedula"]; ?>
-        </div>
-        <div class="table__item">
-            <?php echo $row["estNombres"]; ?>
-        </div>
-        <div class="table__item">
-            <?php echo $row["estApellidos"]; ?>
-        </div>
-        <div class="table__item">
-            <?php echo $row["estFechaNacimiento"]; ?>
-        </div>
-        <div class="table__item">
-            <?php echo $row["estTelefono"]; ?>
-        </div>
-        <div class="table__item">
-            <?php echo $row["estCorreo"]; ?>
-        </div>
-        <div class="table__item">
-            <?php echo $row["estRepresentantePadres"]; ?>
-        </div>
-        <div class="table__item">
-            <?php echo $row["estDireccion"]; ?>
-        </div>
+<div class="form-floating mb-3">
+<input type="text" class="form-control" id="Telefono" placeholder="Telefono">
+<label for="floatingInput">Telefono</label>
+</div>
+        <div class="form-floating mb-3">
+  <input type="email" class="form-control" id="Correo" placeholder="name@example.com">
+  <label for="floatingInput">Correo</label>
+</div>
 
-        <?php
-        }
-        ?>
+<div class="form-floating mb-3">
+<input type="text" class="form-control" id="Representate" placeholder="Representate">
+<label for="floatingInput">Nombre del Representate</label>
+</div>
 
-    </div>
+<div class="form-floating mb-3">
+<input type="text" class="form-control" id="Direccion" placeholder="Direccion">
+<label for="floatingInput">Direccion</label>
+</div>
+
+<button type="button" class="btn btn-primary">Matricular Alumno</button>
+
+<button type="button" class="btn btn-secondary">Eliminar</button>
+<button type="button" class="btn btn-success">Editar</button>
+    </form>
+
 
     
 </body>
