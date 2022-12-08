@@ -106,15 +106,15 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                             </div>
                         </td>
 
-                        <td>
-                            <button type="button" class="btn btn-secondary">Eliminar</button>
-                            <button type="button" class="btn btn-success">Editar</button>
+                        <td>                            
+                            <a href="editar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-info">Editar</a>
+                            <a href="eliminar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-info">Eliminar</a>
                         </td>
 
                     <?php
                     }
                     ?>
-                </tr>
+                </tr>   
             </tbody>
         </table>
 
