@@ -1,6 +1,6 @@
 <?php
     include ("conexion.php");
-
+    $con=conectar();
     $idEstudiante=$_POST['idEstudiante'];
     $estCedula=$_POST['estCedula'];
     $estNombres=$_POST['estNombres'];
