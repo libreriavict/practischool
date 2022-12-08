@@ -66,6 +66,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                 <th>CORREO</th>
                 <th>REPRESENTANTE DEL ALUMNO</th>
                 <th>DIRECCION</th>
+                <th>OPCIONES</th>
             </thead>
             <tbody>
                 <tr class="table-active">
