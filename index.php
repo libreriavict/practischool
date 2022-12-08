@@ -124,6 +124,12 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                         </div>
                     </td>
 
+                    <td>
+                    <button type="button" class="btn btn-secondary">Eliminar</button>
+<button type="button" class="btn btn-success">Editar</button>
+
+                    </td>
+
                 <?php
             }
             ?>
@@ -171,8 +177,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
 
 <button type="button" class="btn btn-primary">Matricular Alumno</button>
 
-<button type="button" class="btn btn-secondary">Eliminar</button>
-<button type="button" class="btn btn-success">Editar</button>
+
     </form>
 
 
