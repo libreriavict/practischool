@@ -5,9 +5,14 @@
 -->
 
 <?php
-
-    $conexion = mysqli_connect('localhost', 'root' , '', 'db_practischool');
-
-    mysqli_set_charset($conexion, 'utf8');
+function conectar(){
+    $host='localhost';
+    $user='root';
+    $pass='';
+    $bd='db_practischool';
+    $con=mysqli_connect($host,$user,$pass);
+    mysqli_select_db($con,$bd);
+    return $con;
+}
 
 ?>
