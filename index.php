@@ -104,8 +104,8 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                         </td>
 
                         <td>                            
-                            <a href="editar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-info">Editar</a>
-                            <a href="eliminar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-info">Eliminar</a>
+                            <a href="actualizar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-info">Editar</a>
+                            <a href="eliminar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-danger">Eliminar</a>
                         </td>
 
                     <?php
@@ -119,56 +119,60 @@ $estudiante = "SELECT * FROM tbl_estudiante";
 
             <form action="insertar.php" method="POST" class="row g-3 needs-validation">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="estCedula" placeholder="Nombres">
+                    <input type="number" class="form-control" name="idEstudiante">
+                    <label for="floatingInput">Id</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" name="estCedula">
                     <label for="floatingInput">Cedula</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="estNombres" placeholder="Nombres">
+                    <input type="text" class="form-control" name="estNombres">
                     <label for="floatingInput">Nombres</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="estApellidos" placeholder="Apellidos">
+                    <input type="text" class="form-control" name="estApellidos">
                     <label for="floatingInput">Apellidos</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="date" class="form-control" id="estFechaNacimiento" placeholder="Fecha">
+                    <input type="date" class="form-control" name="estFechaNacimiento">
                     <label for="floatingInput">Fecha de Nacimiento</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="estTelefono" placeholder="Telefono">
+                    <input type="number" class="form-control" name="estTelefono">
                     <label for="floatingInput">Telefono</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="estCorreo" placeholder="name@example.com">
+                    <input type="email" class="form-control" name="estCorreo">
                     <label for="floatingInput">Correo</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="estRepresentatePadres" placeholder="Representate">
+                    <input type="text" class="form-control" name="estRepresentantePadres">
                     <label for="floatingInput">Nombre del Representate</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="estDireccion" placeholder="Direccion">
+                    <input type="text" class="form-control" name="estDireccion">
                     <label for="floatingInput">Direccion</label>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Matricular Alumno</button>
+                <input type="submit" class="btn btn-primary" value="Matricular Alumno">
 
 
             </form>
-
+        </div>                
             <footer>
                 <p>Copyright 2022</p>
                 <p><a href=”#”>INSTITUTO QUITO</a></p>
                 <p>PROYECTO AMBIENTES COMPUTACIONALES</p>
                 <p>Síguenos en <a href=”https://github.com/libreriavict/practischool”>GITHUB</a></p>
             </footer>
-
+    </div>
 
 
 
