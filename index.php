@@ -118,38 +118,42 @@ $estudiante = "SELECT * FROM tbl_estudiante";
         <div class="container">
 
             <form action="insertar.php" method="POST" class="row g-3 needs-validation">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="estCedula" placeholder="Nombres">
+                    <label for="floatingInput">Cedula</label>
+                </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="Nombres" placeholder="Nombres">
+                    <input type="text" class="form-control" id="estNombres" placeholder="Nombres">
                     <label for="floatingInput">Nombres</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="Apellidos" placeholder="Apellidos">
+                    <input type="text" class="form-control" id="estApellidos" placeholder="Apellidos">
                     <label for="floatingInput">Apellidos</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="date" class="form-control" id="Fecha" placeholder="Fecha">
+                    <input type="date" class="form-control" id="estFechaNacimiento" placeholder="Fecha">
                     <label for="floatingInput">Fecha de Nacimiento</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="Telefono" placeholder="Telefono">
+                    <input type="text" class="form-control" id="estTelefono" placeholder="Telefono">
                     <label for="floatingInput">Telefono</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="Correo" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="estCorreo" placeholder="name@example.com">
                     <label for="floatingInput">Correo</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="Representate" placeholder="Representate">
+                    <input type="text" class="form-control" id="estRepresentatePadres" placeholder="Representate">
                     <label for="floatingInput">Nombre del Representate</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="Direccion" placeholder="Direccion">
+                    <input type="text" class="form-control" id="estDireccion" placeholder="Direccion">
                     <label for="floatingInput">Direccion</label>
                 </div>
 
