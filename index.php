@@ -1,5 +1,6 @@
 <?php
     include("conexion.php");
+    //conexion de la base de datos
     $con=conectar();
     $estudiante = "SELECT * FROM tbl_estudiante";
 ?>
@@ -85,6 +86,6 @@
 
 </div>
 
-    <h1>Hola Mundo</h1>
+    <h1>Hola</h1>
 </body>
 </html>
