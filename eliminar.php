@@ -5,9 +5,9 @@
     $idEstudiante=$_GET['id'];
 
     $sql="DELETE FROM tbl_estudiante WHERE idEstudiante='$idEstudiante'";
-    $query=mysqli_query($sql);
+    $query=mysqli_query($con,$sql);
 
-        if(query){
+        if($query){
             Header("Location: index.php");
         }
 

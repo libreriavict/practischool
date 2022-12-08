@@ -12,8 +12,7 @@ $estRepresentantePadres=$_POST['estRepresentantePadres'];
 $estDireccion=$_POST['estDireccion'];
 //codigo sql
 $sql="INSERT INTO db_practischool VALUES ('$estCedula','$estNombres','$estApellidos','$estFechaNacimiento','$estTelefono','$estCorreo','$estRepresentantePadres','$estDireccion')";
-$query=mysqli_query($sql);
-
+$query=mysqli_query($con,$sql);
 if($query){
     Header("Location:index.php");
 }else{
