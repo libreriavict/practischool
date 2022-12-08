@@ -1,6 +1,6 @@
 <?php
 include("conexion.php");
-
+$con=conectar();
 $estudiante = "SELECT * FROM tbl_estudiante";
 ?>
 
@@ -54,57 +54,75 @@ $estudiante = "SELECT * FROM tbl_estudiante";
         </div>
     </div>
 
-    <table class="table">
-        <thead>
-            <th>CEDULA</th>
-            <th>NOMBRES</th>
-            <th>APELLIDOS</th>
-            <th>FECHA DE NACIMIENTO</th>
-            <th>TELEFONO</th>
-            <th>CORREO</th>
-            <th>REPRESENTANTE DEL ALUMNO</th>
-            <th>DIRECCION</th>
-        </thead>
-        <tbody>
-            <tr class="table-active">
+    <div class="container-sm">
 
-                <?php
-            $resultado = mysqli_query($conexion, $estudiante);
+        <table class="table">
+            <thead>
+                <th>CEDULA</th>
+                <th>NOMBRES</th>
+                <th>APELLIDOS</th>
+                <th>FECHA DE NACIMIENTO</th>
+                <th>TELEFONO</th>
+                <th>CORREO</th>
+                <th>REPRESENTANTE DEL ALUMNO</th>
+                <th>DIRECCION</th>
+            </thead>
+            <tbody>
+                <tr class="table-active">
 
-            while ($row = mysqli_fetch_assoc($resultado)) {
-            ?>
+                    <?php
+                    $resultado = mysqli_query($conexion, $estudiante);
 
-                <td><div class="table__item">
-                    <?php echo $row["estCedula"]; ?>
-                </div></td>
+                    while ($row = mysqli_fetch_assoc($resultado)) {
+                    ?>
 
-                <td><div class="table__item">
-                    <?php echo $row["estNombres"]; ?>
-                </div></td>
+                    <td>
+                        <div class="table__item">
+                            <?php echo $row["estCedula"]; ?>
+                        </div>
+                    </td>
 
-                <td><div class="table__item">
-                    <?php echo $row["estApellidos"]; ?>
-                </div></td>
+                    <td>
+                        <div class="table__item">
+                            <?php echo $row["estNombres"]; ?>
+                        </div>
+                    </td>
 
-                <td><div class="table__item">
-                    <?php echo $row["estFechaNacimiento"]; ?>
-                </div></td>
+                    <td>
+                        <div class="table__item">
+                            <?php echo $row["estApellidos"]; ?>
+                        </div>
+                    </td>
 
-                <td><div class="table__item">
-                    <?php echo $row["estTelefono"]; ?>
-                </div></td>
+                    <td>
+                        <div class="table__item">
+                            <?php echo $row["estFechaNacimiento"]; ?>
+                        </div>
+                    </td>
 
-                <td><div class="table__item">
-                    <?php echo $row["estCorreo"]; ?>
-                </div></td>
+                    <td>
+                        <div class="table__item">
+                            <?php echo $row["estTelefono"]; ?>
+                        </div>
+                    </td>
 
-                <td><div class="table__item">
-                    <?php echo $row["estRepresentantePadres"]; ?>
-                </div></td>
+                    <td>
+                        <div class="table__item">
+                            <?php echo $row["estCorreo"]; ?>
+                        </div>
+                    </td>
 
-                <td><div class="table__item">
-                    <?php echo $row["estDireccion"]; ?>
-                </div></td>
+                    <td>
+                        <div class="table__item">
+                            <?php echo $row["estRepresentantePadres"]; ?>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="table__item">
+                            <?php echo $row["estDireccion"]; ?>
+                        </div>
+                    </td>
 
                 <?php
             }
