@@ -2,10 +2,7 @@
 include("conexion.php");
 $con = conectar();
 $estudiante = "SELECT * FROM tbl_estudiante";
-include("conexion.php");
-//conexion de la base de datos
-$con = conectar();
-$estudiante = "SELECT * FROM tbl_estudiante";
+
 ?>
 
 <!DOCTYPE html>
