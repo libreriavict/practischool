@@ -1,6 +1,6 @@
 <?php
     include("conexion.php");
-
+    $con=conectar();
     $estudiante = "SELECT * FROM tbl_estudiante";
 ?>
 
@@ -65,7 +65,7 @@
     <div class="table__header">Direccion</div>
 
     <?php
-        $resultado = mysqli_query($conexion, $estudiante);
+        $resultado = mysqli_query($con, $estudiante);
 
         while($row = mysqli_fetch_assoc($resultado)){
     ?>
