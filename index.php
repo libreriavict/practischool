@@ -71,10 +71,10 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                 <tr class="table-active">
 
                     <?php
-                $resultado = mysqli_query($conexion, $estudiante);
+                    $resultado = mysqli_query($conexion, $estudiante);
 
-                while ($row = mysqli_fetch_assoc($resultado)) {
-                ?>
+                    while ($row = mysqli_fetch_assoc($resultado)) {
+                    ?>
 
                     <td>
                         <div class="table__item">
@@ -125,18 +125,57 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                     </td>
 
                     <?php
-                }
-                ?>
+                    }
+                    ?>
                 </tr>
             </tbody>
         </table>
     </div>
 
+    <form class="row g-3 needs-validation">
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="Nombres" placeholder="Nombres">
+            <label for="floatingInput">Nombres</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="Apellidos" placeholder="Apellidos">
+            <label for="floatingInput">Apellidos</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="date" class="form-control" id="Fecha" placeholder="Fecha">
+            <label for="floatingInput">Fecha de Nacimiento</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="Telefono" placeholder="Telefono">
+            <label for="floatingInput">Telefono</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="Correo" placeholder="name@example.com">
+            <label for="floatingInput">Correo</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="Representate" placeholder="Representate">
+            <label for="floatingInput">Nombre del Representate</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="Direccion" placeholder="Direccion">
+            <label for="floatingInput">Direccion</label>
+        </div>
+
+    </form>
+
     <div class="container-lg text-center">
-        
-    <button type="button" class="btn btn-primary">Ingresar Alumno</button>
-    <button type="button" class="btn btn-secondary">Eliminar Alumno</button>
-    <button type="button" class="btn btn-success">Actualizar Alumno</button>
+
+        <button type="button" class="btn btn-primary">Ingresar Alumno</button>
+        <button type="button" class="btn btn-secondary">Eliminar Alumno</button>
+        <button type="button" class="btn btn-success">Actualizar Alumno</button>
+
     </div>
 
 
