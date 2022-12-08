@@ -50,7 +50,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                 <tr class="table-active">
 
                     <?php
-                    $resultado = mysqli_query($conexion, $estudiante);
+                    $resultado = mysqli_query($con, $estudiante);
 
                     while ($row = mysqli_fetch_assoc($resultado)) {
                     ?>
