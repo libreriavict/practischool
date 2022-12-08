@@ -14,6 +14,6 @@
     $sql="UPDATE tbl_estudiante SET estCedula='$estCedula',estNombres='$estNombres',estApellidos='$estApellidos',estFechaNacimiento='$estFechaNacimiento',estTelefono='$estTelefono',estCorreo='$estCorreo',estRepresentantePadres='$estRepresentantePadres',estDireccion='$estDireccion', WHERE idEstudiante='$idEstudiante'";
     $query=mysqli_query($sql);
         if($query){
-            Header("Location: index.php")
+            Header("Location: index.php");
         } 
 ?>
