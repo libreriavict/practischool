@@ -111,6 +111,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                     }
                     ?>
                     <br>
+                    
                 </tr>   
             </tbody>
         </table>
