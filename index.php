@@ -36,6 +36,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
 
         <table class="table">
             <thead>
+                <tr>
                 <th>CEDULA</th>
                 <th>NOMBRES</th>
                 <th>APELLIDOS</th>
@@ -45,7 +46,11 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                 <th>REPRESENTANTE DEL ALUMNO</th>
                 <th>DIRECCION</th>
                 <th>OPCIONES</th>
+                </tr>
+                
             </thead>
+
+
             <tbody>
                 <tr class="table-active">
 
@@ -54,7 +59,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
 
                     while ($row = mysqli_fetch_assoc($resultado)) {
                     ?>
-
+                    <tr>
                         <td>
                             <div class="table__item">
                                 <?php echo $row["estCedula"]; ?>
@@ -102,16 +107,18 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                                 <?php echo $row["estDireccion"]; ?>
                             </div>
                         </td>
-
+                                            
                         <td>                            
                             <a href="actualizar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-info">Editar</a>
                             <a href="eliminar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-danger">Eliminar</a>
                         </td>
+                        </tr>
                     <?php
                     }
                     ?>
                     <br>
                 </tr>   
+                
             </tbody>
         </table>
 
