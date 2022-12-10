@@ -107,6 +107,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                             <a href="actualizar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-info">Editar</a>
                             <a href="eliminar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-danger">Eliminar</a>
                         </td>
+                        <tr>
                     <?php
                     }
                     ?>
