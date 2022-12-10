@@ -120,7 +120,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
             <form action="insertar.php" method="POST" class="row g-3 needs-validation">
                 <div class="form-floating mb-3">
                     <input type="number" class="form-control" name="idEstudiante">
-                    <label for="floatingInput">Id</label>
+                    <label for="floatingInput">Id Estudiante</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="number" class="form-control" name="estCedula">
