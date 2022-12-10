@@ -37,7 +37,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
         <table class="table">
             <thead>
                 <tr>
-                <th>CEDULA</th>
+                <th>CEDULAs</th>
                 <th>NOMBRES</th>
                 <th>APELLIDOS</th>
                 <th>FECHA DE NACIMIENTO</th>
