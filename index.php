@@ -27,7 +27,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
             </button>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="BUSCAR" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                <button class="btn btn-outline-success" type="submit">BUSCAR..</button>
             </form>
         </div>
     </nav>
@@ -48,14 +48,17 @@ $estudiante = "SELECT * FROM tbl_estudiante";
             </thead>
             <tbody>
                 <tr class="table-active">
-
-                    <?php
+                    
+                    <?php                    
                     $resultado = mysqli_query($con, $estudiante);
-
+                    
                     while ($row = mysqli_fetch_assoc($resultado)) {
+                       
+                       
                     ?>
-
+                       
                         <td>
+                            
                             <div class="table__item">
                                 <?php echo $row["estCedula"]; ?>
                             </div>
@@ -102,15 +105,20 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                                 <?php echo $row["estDireccion"]; ?>
                             </div>
                         </td>
-
+                        
                         <td>                            
                             <a href="actualizar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-info">Editar</a>
                             <a href="eliminar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-danger">Eliminar</a>
                         </td>
                         <tr>
+                       
                     <?php
                     }
+                    
                     ?>
+                    <br>
+                    
+                    
                 </tr>   
             </tbody>
         </table>
@@ -120,7 +128,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
             <form action="insertar.php" method="POST" class="row g-3 needs-validation">
                 <div class="form-floating mb-3">
                     <input type="number" class="form-control" name="idEstudiante">
-                    <label for="floatingInput">Id</label>
+                    <label for="floatingInput">Id Estudiante</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="number" class="form-control" name="estCedula">
