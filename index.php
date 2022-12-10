@@ -36,7 +36,8 @@ $estudiante = "SELECT * FROM tbl_estudiante";
 
         <table class="table">
             <thead>
-                <th>CEDULA</th>
+                <tr>
+                <th>CEDULAs</th>
                 <th>NOMBRES</th>
                 <th>APELLIDOS</th>
                 <th>FECHA DE NACIMIENTO</th>
@@ -45,7 +46,11 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                 <th>NOMBRE DEL REPRESENTANTE DEL ALUMNO</th>
                 <th>DIRECCION</th>
                 <th>OPCIONES</th>
+                </tr>
+                
             </thead>
+
+
             <tbody>
                 <tr class="table-active">
                     
@@ -57,6 +62,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                        
                     ?>
                        
+                    <tr>
                         <td>
                             
                             <div class="table__item">
@@ -105,13 +111,11 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                                 <?php echo $row["estDireccion"]; ?>
                             </div>
                         </td>
-                        
+
                         <td>                            
                             <a href="actualizar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-info">Editar</a>
                             <a href="eliminar.php?id=<?php echo $row['idEstudiante']?>" class="btn btn-danger">Eliminar</a>
                         </td>
-                        <tr>
-                       
                     <?php
                     }
                     
@@ -120,6 +124,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                     
                     
                 </tr>   
+                
             </tbody>
         </table>
 
