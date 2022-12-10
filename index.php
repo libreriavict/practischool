@@ -42,7 +42,7 @@ $estudiante = "SELECT * FROM tbl_estudiante";
                 <th>FECHA DE NACIMIENTO</th>
                 <th>TELEFONO</th>
                 <th>CORREO</th>
-                <th>REPRESENTANTE DEL ALUMNO</th>
+                <th>NOMBRE DEL REPRESENTANTE DEL ALUMNO</th>
                 <th>DIRECCION</th>
                 <th>OPCIONES</th>
             </thead>
